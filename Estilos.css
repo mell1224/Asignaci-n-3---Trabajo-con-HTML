@@ -145,3 +145,105 @@ footer label, footer select {
     font-size: 16px;
     margin-left: 10px;
 }
+
+/* Estilo para el fondo de la página de registro */
+body {
+    background-image: url('vegetales.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Contenedor principal del formulario */
+.contenedor-formulario {
+    background: #fff;
+    border: 3px solid orange;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 40px auto 40px auto;
+    padding: 32px 28px 28px 28px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    position: relative;
+    z-index: 1;
+}
+
+/* Título del formulario */
+.contenedor-formulario h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 24px;
+}
+
+/* Etiquetas y campos de entrada */
+label {
+    font-weight: bold;
+    margin-top: 12px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="file"],
+input[type="time"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 6px 0 14px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Radios y checkboxes */
+.radio-group,
+.checkbox-group {
+    margin-bottom: 14px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    margin-right: 18px;
+    display: inline-block;
+}
+
+/* Barra de rango para el agua */
+.rango-agua {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.rango-agua output {
+    min-width: 30px;
+    text-align: right;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Botón de enviar */
+.boton-enviar {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.boton-enviar:hover {
+    background: #388e3c;
+}
