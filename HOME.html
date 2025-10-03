@@ -1,20 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    <title>Home Page - Salud Vital</title>
     <link rel="stylesheet" href="Estilos.css">
 </head>
-<body>
-    <h1>Salud Vital</h1>
-<nav>
-    <ul>
-        <li><a href="HOME.html">Home</a></li>
-        <li><a href="Blog.html">About</a></li>
-        <li><a href="Registro.html">Services</a></li>
-        <li><a href="Contactanos.html">Contact</a></li>
-    </ul>
-<h1 class="Tit"> BLOG DE NOTICIAS</h1>
 
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1 class="Titulo-principal">Salud Vital</h1>
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="HOME.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Registro.html">Registro</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+        <!-- Lista destacada -->
+        <section>
+            <h2 class="Tit">BLOG DE NOTICIAS</h2>
+            <ul class="lista-destacada">
+                <li>Ejercicio y bienestar</li>
+                <li>Alimentación balanceada</li>
+                <li>Descanso adecuado</li>
+                <li>Hidratación</li>
+                <li>Salud mental</li>
+            </ul>
+        </section>
+
+        <!-- Noticias -->
+        <section class="noticias">
+            <div class="NOTICIA">
+                <h3><b>Dormir bien es vital para la salud y tomar somníferos puede afectar el proceso de “lavado” que
+                        hace el cerebro por la noche</b></h3>
+                <img src="https://static.nationalgeographicla.com/files/styles/image_3200/public/01_sleep-lab.jpg"
+                    alt="Dormir bien" class="img-noticia">
+                <p>Los investigadores registran las ondas cerebrales junto con los movimientos musculares y oculares en
+                    un laboratorio del sueño en Alemania. Dormir es vital para la salud del cerebro, pero un nuevo
+                    estudio sugiere que los somníferos habituales pueden interferir en uno de los misteriosos procesos
+                    que eliminan la basura molecular del cerebro por la noche.</p>
+                <a href="https://www.nationalgeographicla.com/ciencia/2025/03/dormir-bien-es-vital-para-la-salud-y-tomar-somniferos-puede-afectar-el-proceso-de-lavado-que-hace-el-cerebro-por-la-noche"
+                    target="_blank">
+                    <button>Ver Más</button>
+                </a>
+            </div>
+
+            <div class="NOTICIA">
+                <h3><b>Una dieta saludable que puede salvar vidas y al planeta: la propuesta que podría evitar 15
+                        millones de muertes al año</b></h3>
+                <img src="https://www.infobae.com/new-resizer/4w2w6wQw7jQw8wQw8wQw8wQw8wQ=/1200x900/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/XYZ123.jpg"
+                    alt="Dieta saludable" class="img-noticia">
+                <p>Los alimentos generan el 30% de los gases de efecto invernadero y amenazan varios límites esenciales
+                    para la supervivencia humana, según expertos. La forma en que nos alimentamos no solo determina
+                    nuestra salud, sino también el futuro del planeta.</p>
+                <a href="https://www.infobae.com/espana/2025/10/03/una-dieta-saludable-que-puede-salvar-vidas-y-al-planeta-la-propuesta-que-podria-evitar-15-millones-de-muertes-al-ano/"
+                    target="_blank">
+                    <button>Ver Más</button>
+                </a>
+            </div>
+
+            <div class="NOTICIA">
+                <h3><b>5 cosas que una nutricionista recomienda antes de empezar a tomar suplementos alimenticios</b>
+                </h3>
+                <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/11F7B/production/_129999999_suplementos.jpg"
+                    alt="Suplementos alimenticios" class="img-noticia">
+                <p>Desde colágeno en polvo hasta gomitas para la inmunidad, los suplementos están en todas partes. Se
+                    comercian como curas rápidas contra los males modernos, con la promesa de darnos mejor sueño, piel
+                    reluciente, mayor concentración y hasta más longevidad.</p>
+                <a href="https://www.bbc.com/mundo/articles/c2enwg8x8v2o" target="_blank">
+                    <button>Ver Más</button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <ul>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+        </ul>
+        <label for="idioma">Idioma:</label>
+        <select id="idioma">
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+        </select>
+    </footer>
+</body>
 
 </html>
