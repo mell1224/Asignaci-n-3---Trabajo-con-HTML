@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="Estilos.css">
 </head>
 
-<!-- Clase para fondo con imagen en la página de registro -->
+<!-- Clase para fondo con imagen -->
+
 <body class="Bdel-formulario">
     <!-- Encabezado con título y menú de navegación -->
     <header>
@@ -31,24 +32,24 @@
         <div class="contenedor-formulario">
             <h2>Formulario de Registro</h2>
             <form>
-                <!-- Campo: Nombre completo -->
+                <!--  Nombre -->
                 <label for="nombre">Nombre completo</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Juan Pérez" required>
 
-                <!-- Campo: Fecha de nacimiento -->
+                <!--  Fecha de nacimiento -->
                 <label for="fecha">Fecha de nacimiento</label>
                 <input type="date" id="fecha" name="fecha" required>
 
-                <!-- Campo: Correo electrónico -->
+                <!-- Correo electrónico -->
                 <label for="correo">Correo electrónico</label>
                 <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
 
-                <!-- Campo: Número telefónico con patrón -->
+                <!-- Número telefónico con patrón -->
                 <label for="telefono">Número telefónico</label>
                 <input type="text" id="telefono" name="telefono" placeholder="0000-0000" pattern="[0-9]{4}-[0-9]{4}"
                     required>
 
-                <!-- Campo: Género (radio) -->
+                <!--  Género (radio) -->
                 <label>Género</label>
                 <div class="radio-group">
                     <label><input type="radio" name="genero" value="Masculino" required> Masculino</label>
@@ -56,19 +57,19 @@
                     <label><input type="radio" name="genero" value="Otro"> Otro</label>
                 </div>
 
-                <!-- Campo: Dirección -->
+                <!--  Dirección -->
                 <label for="direccion">Dirección</label>
                 <input type="text" id="direccion" name="direccion" placeholder="Dirección completa" required>
 
-                <!-- Campo: Peso -->
+                <!--  Peso -->
                 <label for="peso">Peso (kg)</label>
                 <input type="number" id="peso" name="peso" placeholder="Ejemplo: 70" min="1" max="300" required>
 
-                <!-- Campo: Altura -->
+                <!-- Altura -->
                 <label for="altura">Altura (cm)</label>
                 <input type="number" id="altura" name="altura" placeholder="Ejemplo: 170" min="50" max="250" required>
 
-                <!-- Campo: Nivel de actividad física (dropdown) -->
+                <!--  Nivel de actividad física -->
                 <label for="actividad">Nivel de actividad física</label>
                 <select id="actividad" name="actividad" required>
                     <option value="">Seleccione...</option>
@@ -78,7 +79,7 @@
                     <option value="Intenso">Intenso</option>
                 </select>
 
-                <!-- Campo: Objetivo nutricional (checkbox) -->
+                <!-- Objetivo nutricional -->
                 <label>Objetivo nutricional</label>
                 <div class="checkbox-group">
                     <label><input type="checkbox" name="objetivo" value="Perder peso"> Perder peso</label>
@@ -87,23 +88,23 @@
                     <label><input type="checkbox" name="objetivo" value="Mejorar la salud"> Mejorar la salud</label>
                 </div>
 
-                <!-- Campo: Alergias o restricciones alimentarias -->
+                <!-- Alergias o restricciones alimentarias -->
                 <label for="alergias">Alergias o restricciones alimentarias</label>
                 <textarea id="alergias" name="alergias" rows="3"
                     placeholder="Describa sus alergias o restricciones"></textarea>
 
-                <!-- Campo: Cantidad diaria de agua consumida (barra de rango y output) -->
+                <!-- Cantidad diaria de agua consumida  -->
                 <label for="agua">Cantidad diaria de agua consumida (litros)</label>
                 <div class="rango-agua">
                     <input type="range" id="agua" name="agua" min="0" max="5" step="0.1" value="2">
                     <output id="valorAgua" for="agua">2</output> L
                 </div>
 
-                <!-- Campo: Foto de alimentos comunes -->
+                <!--  Foto de alimentos comunes -->
                 <label for="foto">Foto de alimentos comunes</label>
                 <input type="file" id="foto" name="foto" accept="image/*">
 
-                <!-- Campo: Hora habitual de la comida principal -->
+                <!--  Hora habitual de la comida principal -->
                 <label for="hora">Hora habitual de la comida principal</label>
                 <input type="time" id="hora" name="hora" required>
 
@@ -113,7 +114,7 @@
         </div>
     </main>
 
-    <!-- Script para actualizar el valor de litros en tiempo real -->
+    <!--  actualizar el valor de litros en tiempo real -->
     <script>
         // Actualiza el valor del output de agua en tiempo real
         const rango = document.getElementById('agua');
