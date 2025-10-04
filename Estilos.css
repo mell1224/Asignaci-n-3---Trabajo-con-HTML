@@ -1,52 +1,67 @@
-/*Estilo de titulo*/
+/* Fuentes generales */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif; /* Títulos modernos y claros */
+}
+
+body, p, li, label, input, textarea, select {
+    font-family: 'Open Sans', sans-serif; /* Contenido fácil de leer */
+}
+
+/* Títulos de la página */
 .Titulo-principal {
-    background-color: beige;
-    color: #4CAF50;
+    background-color: beige; /* Fondo del título principal */
+    color: #4CAF50; /* Color del texto */
     font-size: 50px;
     text-align: center;
     font-family: 'Arial', sans-serif;
     margin-top: 30px;
 }
+
 .Tit {
     color: chocolate;
     text-align: center;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 30px;
-
 }
-div{
-    margin: 0%;
-    padding: 0%;
+
+/* Enlaces generales */
+a {
+    font-weight: bold;
+}
+
+/* Reset de márgenes y padding en div */
+div {
+    margin: 0;
+    padding: 0;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Muestra los elementos en línea */
+    justify-content: center; /* Centra el menú */
 }
 
 nav ul li {
-    margin: 0 20px;           /* Espacio entre los elementos */
+    margin: 0 20px; /* Espacio entre los elementos */
 }
 
 nav ul li a {
-    text-decoration: none;    /* Quita el subrayado */
-    color: #333;
+    text-decoration: none; /* Quita subrayado */
+    color: #9ce26e;
     font-size: 20px;
     padding: 10px 15px;
-    transition: background 0.3s;
+    transition: background 0.3s; /* Animación al pasar el mouse */
 }
 
 nav ul li a:hover {
     background: #4CAF50;
-    color: #fff;
+    color: #305a50;
     border-radius: 5px;
 }
-nav ul{
-    list-style: none;
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    justify-content: center;
-}
-
-````css
-/* ...código existente... */
 
 /* Lista destacada */
 .lista-destacada {
@@ -54,11 +69,11 @@ nav ul{
     border: 2px solid #ffd700;
     border-radius: 8px;
     padding: 16px 24px;
-    margin: 0 auto 32px auto;
+    margin: 0 auto 32px auto; /* Centra y da espacio inferior */
     max-width: 600px;
-    list-style: disc inside;
+    list-style: disc inside; /* Puntos dentro del contenedor */
     font-size: 18px;
-    box-shadow: 0 2px 8px #eee;
+    box-shadow: 0 2px 8px #eee; /* Sombra ligera */
 }
 
 /* Contenedor de noticias */
@@ -66,7 +81,7 @@ nav ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 32px;
+    gap: 32px; /* Espacio entre noticias */
     margin-bottom: 40px;
 }
 
@@ -141,40 +156,39 @@ footer ul li a {
     font-weight: bold;
 }
 
-footer label, footer select {
+footer label,
+footer select {
     font-size: 16px;
     margin-left: 10px;
 }
 
-/* Estilo para el fondo de la página de registro */
-body {
+/* Fondo y contenedor de formulario */
+.Bdel-formulario {
     background-image: url('vegetales.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-/* Contenedor principal del formulario */
 .contenedor-formulario {
     background: #fff;
     border: 3px solid orange;
     border-radius: 12px;
     max-width: 500px;
-    margin: 40px auto 40px auto;
+    margin: 40px auto;
     padding: 32px 28px 28px 28px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     position: relative;
     z-index: 1;
 }
 
-/* Título del formulario */
 .contenedor-formulario h2 {
     text-align: center;
     color: #4CAF50;
     margin-bottom: 24px;
 }
 
-/* Etiquetas y campos de entrada */
+/* Campos del formulario */
 label {
     font-weight: bold;
     margin-top: 12px;
