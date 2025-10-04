@@ -1,16 +1,16 @@
 /* Fuentes generales */
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif; /* Títulos modernos y claros */
+    font-family: 'Montserrat', sans-serif; /* Títulos otroou */
 }
 
 body, p, li, label, input, textarea, select {
-    font-family: 'Open Sans', sans-serif; /* Contenido fácil de leer */
+    font-family: 'Open Sans', sans-serif; 
 }
 
 /* Títulos de la página */
 .Titulo-principal {
     background-color: beige; /* Fondo del título principal */
-    color: #4CAF50; /* Color del texto */
+    color: #8b2a5b; /* Color del texto */
     font-size: 50px;
     text-align: center;
     font-family: 'Arial', sans-serif;
@@ -18,7 +18,7 @@ body, p, li, label, input, textarea, select {
 }
 
 .Tit {
-    color: chocolate;
+    color: #8b2a5b;
     text-align: center;
     font-size: 36px;
     font-weight: bold;
@@ -37,6 +37,12 @@ div {
 }
 
 /* Menú de navegación */
+nav {
+    background-color: beige; /* Fondo igual al título principal */
+    border-radius: 10px;     
+    padding: 10px 0;        
+    margin-bottom: 20px;    
+}
 nav ul {
     list-style: none; /* Quita los puntos de la lista */
     padding: 0;
@@ -51,7 +57,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none; /* Quita subrayado */
-    color: #9ce26e;
+    color: #f17108;
+    font-weight: bold;
     font-size: 20px;
     padding: 10px 15px;
     transition: background 0.3s; /* Animación al pasar el mouse */
@@ -61,6 +68,13 @@ nav ul li a:hover {
     background: #4CAF50;
     color: #305a50;
     border-radius: 5px;
+}
+/*Fondo del Home*/
+.fondo-home {
+    background-color: beige;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Lista destacada */
